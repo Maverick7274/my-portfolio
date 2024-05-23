@@ -3,6 +3,7 @@ import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
+import Header from "@/components/Header/Header";
 
 const fontSans = FontSans({
 	subsets: ["latin"],
@@ -20,7 +21,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html lang="en" suppressHydrationWarning>
 			<ThemeProvider
 				attribute="class"
 				defaultTheme="system"
@@ -33,6 +34,7 @@ export default function RootLayout({
 						fontSans.variable
 					)}
 				>
+					<Header />
 					{children}
 				</body>
 			</ThemeProvider>

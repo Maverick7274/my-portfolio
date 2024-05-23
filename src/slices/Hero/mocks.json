@@ -1,0 +1,29 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"first_name": {
+				"__TYPE__": "FieldContent",
+				"value": "with",
+				"type": "Text"
+			},
+			"last_name": {
+				"__TYPE__": "FieldContent",
+				"value": "review",
+				"type": "Text"
+			},
+			"tag_line": {
+				"__TYPE__": "FieldContent",
+				"value": "effort",
+				"type": "Text"
+			},
+			"job_title": {
+				"__TYPE__": "FieldContent",
+				"value": "fact",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

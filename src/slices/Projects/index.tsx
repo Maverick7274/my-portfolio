@@ -25,12 +25,10 @@ const Projects = ({ slice }: ProjectsProps): JSX.Element => {
 
 	const handleView = () => {
 		if (view === "grid") {
-			localStorage.setItem("view", view);
 			return (
 				<PrismicCard slice={slice} index={0} slices={[]} context={undefined} />
 			)
 		} else {
-			localStorage.setItem("view", view);
 			return <PrismicList slice={slice} index={0} slices={[]} context={undefined} />;
 		}
 

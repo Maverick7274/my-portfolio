@@ -96,13 +96,13 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
 	};
 
 	return (
-		<WavyBackground className="mx-auto">
+		<WavyBackground className="">
 			<Bounded
 				data-slice-type={slice.slice_type}
 				data-slice-variation={slice.variation}
 				ref={components}
 			>
-				<div className="min-h-[90vh] grid md:grid-cols-2 grid-cols-1 items-center">
+				<div className="min-h-[50vh] grid md:grid-cols-2 grid-cols-1 items-center">
 					{/* <div className="absolute flex items-center justify-center w-full">
 					<h1 className="welcome top-0 bottom-0 text-[clamp(3rem,15vmin,20rem)] font-extrabold leading-none tracking-tighter">
 						Welcome
@@ -133,16 +133,6 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
 						<p className="tag-line text-[1.5rem]">
 							{slice.primary.tag_line}
 						</p>
-						<div className="py-12 flex items-center gap-5">
-							<Button>
-								{/* {slice.primary.button_text} */}
-								Contact Me
-							</Button>
-							<Button>
-								{/* {slice.primary.button_text} */}
-								My Projects
-							</Button>
-						</div>
 					</div>
 				</div>
 			</Bounded>

@@ -1,0 +1,82 @@
+{
+  "id": "projects",
+  "type": "SharedSlice",
+  "name": "Projects",
+  "description": "Projects",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "project_details": {
+          "type": "Group",
+          "config": {
+            "label": "Project Details",
+            "repeat": true,
+            "fields": {
+              "project_title": {
+                "type": "Text",
+                "config": {
+                  "label": "Project Title",
+                  "placeholder": ""
+                }
+              },
+              "project_github_repo": {
+                "type": "Link",
+                "config": {
+                  "label": "Project Github Repo",
+                  "placeholder": "",
+                  "select": null
+                }
+              },
+              "project_live_url": {
+                "type": "Link",
+                "config": {
+                  "label": "Project Live URL",
+                  "placeholder": "",
+                  "select": null
+                }
+              },
+              "project_image": {
+                "type": "Image",
+                "config": {
+                  "label": "Project Image",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              },
+              "project_description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Project Description",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              },
+              "project_tagline": {
+                "type": "Text",
+                "config": {
+                  "label": "Project Tagline",
+                  "placeholder": ""
+                }
+              },
+              "technologies_used": {
+                "type": "Text",
+                "config": {
+                  "label": "Technologies Used",
+                  "placeholder": ""
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

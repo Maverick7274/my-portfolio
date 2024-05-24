@@ -69,7 +69,7 @@ export type HomepageDocument<Lang extends string = string> =
     Lang
   >;
 
-type PageDocumentDataSlicesSlice = AboutSlice;
+type PageDocumentDataSlicesSlice = ProjectsSlice | ContactSlice | AboutSlice;
 
 /**
  * Content for Page documents
@@ -383,6 +383,81 @@ type AboutSliceVariation = AboutSliceDefault;
 export type AboutSlice = prismic.SharedSlice<"about", AboutSliceVariation>;
 
 /**
+ * Primary content in *Contact → Default → Primary*
+ */
+export interface ContactSliceDefaultPrimary {
+  /**
+   * Mail ID field in *Contact → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact.default.primary.mail_id
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  mail_id: prismic.KeyTextField;
+
+  /**
+   * Work Address field in *Contact → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact.default.primary.work_address
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  work_address: prismic.KeyTextField;
+
+  /**
+   * Work Location field in *Contact → Default → Primary*
+   *
+   * - **Field Type**: GeoPoint
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact.default.primary.work_location
+   * - **Documentation**: https://prismic.io/docs/field#geopoint
+   */
+  work_location: prismic.GeoPointField;
+
+  /**
+   * Contact Description field in *Contact → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact.default.primary.contact_description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  contact_description: prismic.RichTextField;
+}
+
+/**
+ * Default variation for Contact Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ContactSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<ContactSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *Contact*
+ */
+type ContactSliceVariation = ContactSliceDefault;
+
+/**
+ * Contact Shared Slice
+ *
+ * - **API ID**: `contact`
+ * - **Description**: Contact
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ContactSlice = prismic.SharedSlice<
+  "contact",
+  ContactSliceVariation
+>;
+
+/**
  * Primary content in *Hero → Default → Primary*
  */
 export interface HeroSliceDefaultPrimary {
@@ -454,6 +529,128 @@ type HeroSliceVariation = HeroSliceDefault;
  */
 export type HeroSlice = prismic.SharedSlice<"hero", HeroSliceVariation>;
 
+/**
+ * Item in *Projects → Default → Primary → Project Details*
+ */
+export interface ProjectsSliceDefaultPrimaryProjectDetailsItem {
+  /**
+   * Project Title field in *Projects → Default → Primary → Project Details*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: projects.default.primary.project_details[].project_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  project_title: prismic.KeyTextField;
+
+  /**
+   * Project Github Repo field in *Projects → Default → Primary → Project Details*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: projects.default.primary.project_details[].project_github_repo
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  project_github_repo: prismic.LinkField;
+
+  /**
+   * Project Live URL field in *Projects → Default → Primary → Project Details*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: projects.default.primary.project_details[].project_live_url
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  project_live_url: prismic.LinkField;
+
+  /**
+   * Project Image field in *Projects → Default → Primary → Project Details*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: projects.default.primary.project_details[].project_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  project_image: prismic.ImageField<never>;
+
+  /**
+   * Project Description field in *Projects → Default → Primary → Project Details*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: projects.default.primary.project_details[].project_description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  project_description: prismic.RichTextField;
+
+  /**
+   * Project Tagline field in *Projects → Default → Primary → Project Details*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: projects.default.primary.project_details[].project_tagline
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  project_tagline: prismic.KeyTextField;
+
+  /**
+   * Technologies Used field in *Projects → Default → Primary → Project Details*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: projects.default.primary.project_details[].technologies_used
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  technologies_used: prismic.KeyTextField;
+}
+
+/**
+ * Primary content in *Projects → Default → Primary*
+ */
+export interface ProjectsSliceDefaultPrimary {
+  /**
+   * Project Details field in *Projects → Default → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: projects.default.primary.project_details[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  project_details: prismic.GroupField<
+    Simplify<ProjectsSliceDefaultPrimaryProjectDetailsItem>
+  >;
+}
+
+/**
+ * Default variation for Projects Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ProjectsSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<ProjectsSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *Projects*
+ */
+type ProjectsSliceVariation = ProjectsSliceDefault;
+
+/**
+ * Projects Shared Slice
+ *
+ * - **API ID**: `projects`
+ * - **Description**: Projects
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ProjectsSlice = prismic.SharedSlice<
+  "projects",
+  ProjectsSliceVariation
+>;
+
 declare module "@prismicio/client" {
   interface CreateClient {
     (
@@ -478,10 +675,19 @@ declare module "@prismicio/client" {
       AboutSliceDefaultPrimary,
       AboutSliceVariation,
       AboutSliceDefault,
+      ContactSlice,
+      ContactSliceDefaultPrimary,
+      ContactSliceVariation,
+      ContactSliceDefault,
       HeroSlice,
       HeroSliceDefaultPrimary,
       HeroSliceVariation,
       HeroSliceDefault,
+      ProjectsSlice,
+      ProjectsSliceDefaultPrimaryProjectDetailsItem,
+      ProjectsSliceDefaultPrimary,
+      ProjectsSliceVariation,
+      ProjectsSliceDefault,
     };
   }
 }

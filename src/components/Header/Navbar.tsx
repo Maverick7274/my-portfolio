@@ -65,7 +65,7 @@ export default function NavBar({
 								>
 									<span
 										className={clsx(
-											"absolute inset-0 z-0 h-full translate-y-12 rounded bg-blue-300 transition-transform duration-300 ease-in-out group-hover:translate-y-0",
+											"absolute inset-0 z-0 h-full translate-y-12 rounded dark:bg-blue-300 bg-blue-700 transition-transform duration-300 ease-in-out group-hover:translate-y-0",
 											pathname.includes(
 												asLink(link) as string
 											)
@@ -137,7 +137,7 @@ function DesktopMenu({
 						>
 							<span
 								className={clsx(
-									"absolute inset-0 z-0 h-full rounded bg-blue-300 transition-transform  duration-300 ease-in-out group-hover:translate-y-0",
+									"absolute inset-0 z-0 h-full rounded dark:bg-blue-300 bg-blue-700 transition-transform duration-300 ease-in-out group-hover:translate-y-0",
 									pathname.includes(asLink(link) as string)
 										? "translate-y-6"
 										: "translate-y-8"
@@ -156,15 +156,19 @@ function DesktopMenu({
 					)}
 				</React.Fragment>
 			))}
-			<li>
-				<PrismicButton
-					linkField={settings.data.cta_link}
-					label={settings.data.cta_label}
-					className="ml-3"
-				/>
-			</li>
 			<div>
-				<ModeToggle />
+				<ul className="flex items-center justify-between gap-5">
+					<li>
+						<PrismicButton
+							linkField={settings.data.cta_link}
+							label={settings.data.cta_label}
+							className="ml-3"
+						/>
+					</li>
+					<li>
+						<ModeToggle />
+					</li>
+				</ul>
 			</div>
 		</div>
 	);

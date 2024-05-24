@@ -35,7 +35,7 @@ const About = ({ slice }: AboutProps): JSX.Element => {
 				>
 					{slice.primary.heading}
 				</Heading>
-				<div className="prose prose-lg prose-invert dark:text-slate-300 text-black col-start-1">
+				<div className="prose prose-lg dark:text-slate-300 text-black col-start-1">
 					<PrismicRichText field={slice.primary.description} />
 				</div>
 				<PrismicButton

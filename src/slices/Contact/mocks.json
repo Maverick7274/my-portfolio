@@ -1,0 +1,37 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"mail_id": {
+				"__TYPE__": "FieldContent",
+				"value": "deal",
+				"type": "Text"
+			},
+			"work_address": {
+				"__TYPE__": "FieldContent",
+				"value": "quietly",
+				"type": "Text"
+			},
+			"work_location": {
+				"position": {
+					"lat": 48.8841267,
+					"lng": 2.3300579
+				},
+				"__TYPE__": "GeoPointContent"
+			},
+			"contact_description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Magna ex duis eu reprehenderit. Officia tempor consequat ex nulla culpa velit pariatur incididunt ex incididunt dolore esse aute magna."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

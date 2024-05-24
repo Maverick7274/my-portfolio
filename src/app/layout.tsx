@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 const fontSans = FontSans({
 	subsets: ["latin"],
@@ -30,12 +31,13 @@ export default function RootLayout({
 			>
 				<body
 					className={cn(
-						"min-h-screen bg-background font-sans antialiased",
+						"bg-background font-sans antialiased",
 						fontSans.variable
 					)}
 				>
 					<Header />
 					{children}
+					<Footer />
 				</body>
 			</ThemeProvider>
 		</html>

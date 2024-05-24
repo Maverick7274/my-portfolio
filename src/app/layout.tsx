@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import { Analytics } from "@vercel/analytics/react"
 
 const fontSans = FontSans({
 	subsets: ["latin"],
@@ -35,6 +36,7 @@ export default function RootLayout({
 						fontSans.variable
 					)}
 				>
+					<Analytics />
 					<Header />
 					{children}
 					<Footer />

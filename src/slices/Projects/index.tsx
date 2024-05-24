@@ -27,11 +27,11 @@ const Projects = ({ slice }: ProjectsProps): JSX.Element => {
 		if (view === "grid") {
 			localStorage.setItem("view", view);
 			return (
-				<PrismicCard slice={slice} />
+				<PrismicCard slice={slice} index={0} slices={[]} context={undefined} />
 			)
 		} else {
 			localStorage.setItem("view", view);
-			return <PrismicList slice={slice} />;
+			return <PrismicList slice={slice} index={0} slices={[]} context={undefined} />;
 		}
 
 		// Save view selected by user to local storage

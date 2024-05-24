@@ -24,12 +24,12 @@ const Contact = ({ slice }: ContactProps): JSX.Element => {
 			data-slice-variation={slice.variation}
 			ref={components}
 		>
-			<div className="grid md:grid-cols-2 grid-cols-1 gap-16 w-full">
+			<div className="grid md:grid-cols-2 grid-cols-1 gap-16 w-full py-12">
 				<div>
 					<Heading
 						as="h1"
 						size="lg"
-						className="col-start-1 dark:text-slate-300 text-blue-700"
+						className="col-start-1 dark:text-slate-300 text-blue-500"
 					>
 						Contact Me
 					</Heading>
@@ -75,7 +75,7 @@ const Contact = ({ slice }: ContactProps): JSX.Element => {
 					<Heading
 						as="h2"
 						size="sm"
-						className="col-start-1 dark:text-slate-300 text-blue-700"
+						className="col-start-1 dark:text-slate-300 text-blue-500"
 					>
 						My Details
 					</Heading>

@@ -4,7 +4,7 @@ import type * as prismic from "@prismicio/client";
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
-type HomepageDocumentDataSlicesSlice = HeroSlice;
+type HomepageDocumentDataSlicesSlice = ExperienceSlice | HeroSlice;
 
 /**
  * Content for Homepage documents
@@ -387,6 +387,16 @@ export type AboutSlice = prismic.SharedSlice<"about", AboutSliceVariation>;
  */
 export interface ContactSliceDefaultPrimary {
   /**
+   * Heading field in *Contact → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: contact.default.primary.heading
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  heading: prismic.KeyTextField;
+
+  /**
    * Mail ID field in *Contact → Default → Primary*
    *
    * - **Field Type**: Text
@@ -455,6 +465,179 @@ type ContactSliceVariation = ContactSliceDefault;
 export type ContactSlice = prismic.SharedSlice<
   "contact",
   ContactSliceVariation
+>;
+
+/**
+ * Item in *Experience → Default → Primary → Organizations*
+ */
+export interface ExperienceSliceDefaultPrimaryOrganizationsItem {
+  /**
+   * Organization Name field in *Experience → Default → Primary → Organizations*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: experience.default.primary.organizations[].organization_name
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  organization_name: prismic.KeyTextField;
+
+  /**
+   * Organization Description field in *Experience → Default → Primary → Organizations*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: experience.default.primary.organizations[].organization_description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  organization_description: prismic.RichTextField;
+
+  /**
+   * Start of Experience field in *Experience → Default → Primary → Organizations*
+   *
+   * - **Field Type**: Date
+   * - **Placeholder**: *None*
+   * - **API ID Path**: experience.default.primary.organizations[].start_of_experience
+   * - **Documentation**: https://prismic.io/docs/field#date
+   */
+  start_of_experience: prismic.DateField;
+
+  /**
+   * End of Experience field in *Experience → Default → Primary → Organizations*
+   *
+   * - **Field Type**: Date
+   * - **Placeholder**: *None*
+   * - **API ID Path**: experience.default.primary.organizations[].end_of_experience
+   * - **Documentation**: https://prismic.io/docs/field#date
+   */
+  end_of_experience: prismic.DateField;
+
+  /**
+   * Organization Website Link field in *Experience → Default → Primary → Organizations*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: experience.default.primary.organizations[].organization_website_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  organization_website_link: prismic.LinkField;
+
+  /**
+   * Job Description field in *Experience → Default → Primary → Organizations*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: experience.default.primary.organizations[].job_description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  job_description: prismic.RichTextField;
+
+  /**
+   * Organization Location field in *Experience → Default → Primary → Organizations*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: experience.default.primary.organizations[].organization_location
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  organization_location: prismic.KeyTextField;
+
+  /**
+   * Job Title field in *Experience → Default → Primary → Organizations*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: experience.default.primary.organizations[].job_title
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  job_title: prismic.KeyTextField;
+
+  /**
+   * Job Type field in *Experience → Default → Primary → Organizations*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: experience.default.primary.organizations[].job_type
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  job_type: prismic.KeyTextField;
+
+  /**
+   * Currently Working field in *Experience → Default → Primary → Organizations*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: experience.default.primary.organizations[].currently_working
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  currently_working: prismic.BooleanField;
+
+  /**
+   * Organization Logo field in *Experience → Default → Primary → Organizations*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: experience.default.primary.organizations[].organization_logo
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  organization_logo: prismic.ImageField<never>;
+}
+
+/**
+ * Primary content in *Experience → Default → Primary*
+ */
+export interface ExperienceSliceDefaultPrimary {
+  /**
+   * Heading field in *Experience → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: experience.default.primary.heading
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  heading: prismic.KeyTextField;
+
+  /**
+   * Organizations field in *Experience → Default → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: experience.default.primary.organizations[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  organizations: prismic.GroupField<
+    Simplify<ExperienceSliceDefaultPrimaryOrganizationsItem>
+  >;
+}
+
+/**
+ * Default variation for Experience Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ExperienceSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<ExperienceSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *Experience*
+ */
+type ExperienceSliceVariation = ExperienceSliceDefault;
+
+/**
+ * Experience Shared Slice
+ *
+ * - **API ID**: `experience`
+ * - **Description**: Experience
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type ExperienceSlice = prismic.SharedSlice<
+  "experience",
+  ExperienceSliceVariation
 >;
 
 /**
@@ -602,12 +785,33 @@ export interface ProjectsSliceDefaultPrimaryProjectDetailsItem {
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   technologies_used: prismic.KeyTextField;
+
+  /**
+   * Currently Working field in *Projects → Default → Primary → Project Details*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: projects.default.primary.project_details[].currently_working
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  currently_working: prismic.BooleanField;
 }
 
 /**
  * Primary content in *Projects → Default → Primary*
  */
 export interface ProjectsSliceDefaultPrimary {
+  /**
+   * Heading field in *Projects → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: projects.default.primary.heading
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  heading: prismic.KeyTextField;
+
   /**
    * Project Details field in *Projects → Default → Primary*
    *
@@ -679,6 +883,11 @@ declare module "@prismicio/client" {
       ContactSliceDefaultPrimary,
       ContactSliceVariation,
       ContactSliceDefault,
+      ExperienceSlice,
+      ExperienceSliceDefaultPrimaryOrganizationsItem,
+      ExperienceSliceDefaultPrimary,
+      ExperienceSliceVariation,
+      ExperienceSliceDefault,
       HeroSlice,
       HeroSliceDefaultPrimary,
       HeroSliceVariation,

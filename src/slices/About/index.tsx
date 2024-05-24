@@ -27,11 +27,11 @@ const About = ({ slice }: AboutProps): JSX.Element => {
 			data-slice-variation={slice.variation}
 			ref={components}
 		>
-			<div className="grid gap-x-8 gap-y-6 md:grid-cols-[2fr,1fr]">
+			<div className="grid gap-x-8 gap-y-6 md:grid-cols-[2fr,1fr] py-10">
 				<Heading
 					as="h2"
 					size="lg"
-					className="col-start-1 dark:text-slate-300 text-blue-700"
+					className="col-start-1 dark:text-slate-300 text-blue-500"
 				>
 					{slice.primary.heading}
 				</Heading>

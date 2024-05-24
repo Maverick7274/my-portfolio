@@ -41,12 +41,12 @@ const Projects = ({ slice }: ProjectsProps): JSX.Element => {
 			data-slice-variation={slice.variation}
 			ref={components}
 		>
-			<div className="">
+			<div className="py-10">
 				<div className="flex items-center justify-between">
 					<Heading
 						as="h2"
 						size="lg"
-						className="col-start-1 dark:text-slate-300 text-blue-700"
+						className="col-start-1 dark:text-slate-300 text-blue-500"
 					>
 						My Projects
 					</Heading>
@@ -55,8 +55,8 @@ const Projects = ({ slice }: ProjectsProps): JSX.Element => {
 						<div className="flex items-center justify-center gap-5">
 							<button
 								onClick={() => setView("grid")}
-								className={`hover:text-emerald-500 p-4 ${
-									view === "grid" && "text-emerald-500 rounded border"
+								className={`hover:text-blue-500 p-4 ${
+									view === "grid" && "text-blue-700 rounded border"
 								}`}
 							>
 								<svg
@@ -76,8 +76,8 @@ const Projects = ({ slice }: ProjectsProps): JSX.Element => {
 							</button>
 							<button
 								onClick={() => setView("list")}
-								className={`hover:text-emerald-500 p-4 ${
-									view === "list" && "text-emerald-500 rounded border"
+								className={`hover:text-blue-500 p-4 ${
+									view === "list" && "text-blue-700 rounded border"
 								}`}
 							>
 								<svg

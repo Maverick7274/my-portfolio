@@ -1,0 +1,143 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"organizations": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"organization_description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Nostrud magna amet nulla labore laborum exercitation amet elit pariatur deserunt aliqua tempor. Occaecat pariatur deserunt amet velit sint id aliquip non consectetur laborum Lorem aliqua. Cupidatat in id fugiat voluptate ex eu anim Lorem."
+											}
+										}
+									]
+								}
+							],
+							[
+								"start_of_experience",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Date",
+									"value": "2014-03-15"
+								}
+							],
+							[
+								"end_of_experience",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Date",
+									"value": "2021-11-20"
+								}
+							],
+							[
+								"organization_website_link",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://slicemachine.dev"
+									}
+								}
+							],
+							[
+								"job_description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Ullamco reprehenderit deserunt ullamco nulla velit excepteur ipsum. Consequat ut qui proident dolore dolore ad reprehenderit ut ullamco."
+											}
+										}
+									]
+								}
+							],
+							[
+								"organization_location",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "pleasure",
+									"type": "Text"
+								}
+							],
+							[
+								"job_title",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "before",
+									"type": "Text"
+								}
+							],
+							[
+								"organization_name",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "door",
+									"type": "Text"
+								}
+							],
+							[
+								"job_type",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "simply",
+									"type": "Text"
+								}
+							],
+							[
+								"currently_working",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": false
+								}
+							],
+							[
+								"organization_logo",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1587840171670-8b850147754e",
+										"width": 4480,
+										"height": 4480
+									},
+									"url": "https://images.unsplash.com/photo-1587840171670-8b850147754e",
+									"width": 4480,
+									"height": 4480,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"credits": null,
+									"alt": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							]
+						]
+					}
+				]
+			},
+			"heading": {
+				"__TYPE__": "FieldContent",
+				"value": "independent",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

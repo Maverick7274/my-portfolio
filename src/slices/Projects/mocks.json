@@ -92,10 +92,22 @@
 									"value": "glad",
 									"type": "Text"
 								}
+							],
+							[
+								"currently_working",
+								{
+									"__TYPE__": "BooleanContent",
+									"value": true
+								}
 							]
 						]
 					}
 				]
+			},
+			"heading": {
+				"__TYPE__": "FieldContent",
+				"value": "everyone",
+				"type": "Text"
 			}
 		},
 		"items": []

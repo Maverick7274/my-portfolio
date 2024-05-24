@@ -12,6 +12,13 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
+        "heading": {
+          "type": "Text",
+          "config": {
+            "label": "Heading",
+            "placeholder": ""
+          }
+        },
         "project_details": {
           "type": "Group",
           "config": {
@@ -70,6 +77,15 @@
                 "config": {
                   "label": "Technologies Used",
                   "placeholder": ""
+                }
+              },
+              "currently_working": {
+                "type": "Boolean",
+                "config": {
+                  "label": "Currently Working",
+                  "default_value": false,
+                  "placeholder_true": "true",
+                  "placeholder_false": "false"
                 }
               }
             }

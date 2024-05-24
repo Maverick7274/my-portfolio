@@ -6,6 +6,7 @@ import gsap from "gsap";
 import Bounded from "@/components/Bounded";
 import { Button } from "@/components/ui/button";
 import { WavyBackground } from "@/components/ui/wavy-background";
+// import { Vortex } from "@/components/ui/vortex";
 
 export type HeroProps = SliceComponentProps<Content.HeroSlice>;
 
@@ -96,18 +97,13 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
 	};
 
 	return (
-		<WavyBackground className="">
+		<WavyBackground>
 			<Bounded
 				data-slice-type={slice.slice_type}
 				data-slice-variation={slice.variation}
 				ref={components}
 			>
-				<div className="min-h-[50vh] grid md:grid-cols-2 grid-cols-1 items-center">
-					{/* <div className="absolute flex items-center justify-center w-full">
-					<h1 className="welcome top-0 bottom-0 text-[clamp(3rem,15vmin,20rem)] font-extrabold leading-none tracking-tighter">
-						Welcome
-					</h1>
-				</div> */}
+				<div className="min-h-[70vh] grid md:grid-cols-2 grid-cols-1 items-center">
 					<div className="md:row-start-1 col-start-1 relative">
 						<h6 className="job-title block bg-gradient-to-tr dark:from-yellow-500 from-blue-200 dark:via-yellow-200 via-blue-900 dark:to-yellow-200 to-blue-500 bg-clip-text text-sm font-bold uppercase tracking-[.2em] text-transparent opacity-0 md:text-xl">
 							{slice.primary.job_title}
@@ -130,10 +126,11 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
 								{renderLetters(slice.primary.last_name, "last")}
 							</span>
 						</h1>
-						<p className="tag-line text-[1.5rem]">
+						<p className="tag-line text-[1.5rem] opacity-0">
 							{slice.primary.tag_line}
 						</p>
 					</div>
+					<div></div>
 				</div>
 			</Bounded>
 		</WavyBackground>

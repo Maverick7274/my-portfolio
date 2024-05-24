@@ -10,7 +10,7 @@ import PrismicButton from "@/components/PrismicButton";
 import { usePathname } from "next/navigation";
 import { ModeToggle } from "../mode-toggle";
 
-export default function NavBar({
+export default function Navbar({
 	settings,
 }: {
 	settings: Content.SettingsDocument;
@@ -19,14 +19,14 @@ export default function NavBar({
 	const pathname = usePathname();
 
 	return (
-		<nav aria-label="Main navigation">
+		<nav aria-label="Main navigation" className="z-50">
 			<ul className="flex flex-col justify-between rounded-b-lg bg-slate-900 dark:bg-slate-50 px-4 py-2 md:m-4 md:flex-row md:items-center md:rounded-xl">
 				<div className="flex items-center justify-between">
 					<NameLogo name={settings.data.name} />
 					<button
 						aria-expanded={open}
 						aria-label="Open menu"
-						className="block p-2 text-2xl text-slate-800 md:hidden"
+						className="block p-2 text-2xl text-slate-50 dark:text-slate-800 md:hidden"
 						onClick={() => setOpen(true)}
 					>
 						<MdMenu />
@@ -41,7 +41,7 @@ export default function NavBar({
 					<button
 						aria-label="Close menu"
 						aria-expanded={open}
-						className="fixed right-4 top-3 block p-2 text-2xl text-slate-800 md:hidden "
+						className="fixed right-4 top-3 block p-2 text-2xl dark:text-slate-800 md:hidden "
 						onClick={() => setOpen(false)}
 					>
 						<MdClose />

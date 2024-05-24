@@ -1,0 +1,120 @@
+{
+  "id": "experience",
+  "type": "SharedSlice",
+  "name": "Experience",
+  "description": "Experience",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "Text",
+          "config": {
+            "label": "Heading",
+            "placeholder": ""
+          }
+        },
+        "organizations": {
+          "type": "Group",
+          "config": {
+            "label": "Organizations",
+            "repeat": true,
+            "fields": {
+              "organization_name": {
+                "type": "Text",
+                "config": {
+                  "label": "Organization Name",
+                  "placeholder": ""
+                }
+              },
+              "organization_description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Organization Description",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              },
+              "start_of_experience": {
+                "type": "Date",
+                "config": {
+                  "label": "Start of Experience",
+                  "placeholder": ""
+                }
+              },
+              "end_of_experience": {
+                "type": "Date",
+                "config": {
+                  "label": "End of Experience",
+                  "placeholder": ""
+                }
+              },
+              "organization_website_link": {
+                "type": "Link",
+                "config": {
+                  "label": "Organization Website Link",
+                  "placeholder": "",
+                  "select": null
+                }
+              },
+              "job_description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Job Description",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              },
+              "organization_location": {
+                "type": "Text",
+                "config": {
+                  "label": "Organization Location",
+                  "placeholder": ""
+                }
+              },
+              "job_title": {
+                "type": "Text",
+                "config": {
+                  "label": "Job Title",
+                  "placeholder": ""
+                }
+              },
+              "job_type": {
+                "type": "Text",
+                "config": {
+                  "label": "Job Type",
+                  "placeholder": ""
+                }
+              },
+              "currently_working": {
+                "type": "Boolean",
+                "config": {
+                  "label": "Currently Working",
+                  "default_value": false,
+                  "placeholder_true": "true",
+                  "placeholder_false": "false"
+                }
+              },
+              "organization_logo": {
+                "type": "Image",
+                "config": {
+                  "label": "Organization Logo",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

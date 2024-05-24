@@ -42,13 +42,13 @@ const Projects = ({ slice }: ProjectsProps): JSX.Element => {
 			ref={components}
 		>
 			<div className="py-10">
-				<div className="flex items-center justify-between">
+				<div className="flex md:flex-row flex-col items-center justify-between gap-6">
 					<Heading
 						as="h2"
 						size="lg"
 						className="col-start-1 dark:text-slate-300 text-blue-500"
 					>
-						My Projects
+						{slice.primary.heading}
 					</Heading>
 					<div className="flex items-center justify-center gap-5">
 						<div>View by:</div>
@@ -56,7 +56,7 @@ const Projects = ({ slice }: ProjectsProps): JSX.Element => {
 							<button
 								onClick={() => setView("grid")}
 								className={`hover:text-blue-500 p-4 ${
-									view === "grid" && "text-blue-700 rounded border"
+									view === "grid" && "text-blue-700 dark:text-blue-500 rounded border"
 								}`}
 							>
 								<svg
@@ -77,7 +77,7 @@ const Projects = ({ slice }: ProjectsProps): JSX.Element => {
 							<button
 								onClick={() => setView("list")}
 								className={`hover:text-blue-500 p-4 ${
-									view === "list" && "text-blue-700 rounded border"
+									view === "list" && "text-blue-700 dark:text-blue-500 rounded border"
 								}`}
 							>
 								<svg

@@ -31,7 +31,7 @@ const Contact = ({ slice }: ContactProps): JSX.Element => {
 						size="lg"
 						className="col-start-1 dark:text-slate-300 text-blue-500"
 					>
-						Contact Me
+						{slice.primary.heading}
 					</Heading>
           <div className="prose prose-lg dark:text-slate-300 text-black col-start-1">
             <PrismicRichText field={slice.primary.contact_description} />

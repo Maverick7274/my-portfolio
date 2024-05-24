@@ -13,22 +13,24 @@ const PrismicList = ({ slice }: ProjectsProps): JSX.Element => {
 	const components = useRef<HTMLDivElement>(null);
 
 	return (
-        // table format
 		<div className="py-16">
 			{slice.primary.project_details.map((project, index) => {
 				return (
-                    <div key={index} className="grid grid-cols-3 gap-4 my-10 py-6 px-2 rounded-xl hover:bg-slate-200 dark:hover:bg-slate-700">
-                        <div className="col-span-1 gap-5">
+                    <div key={index} className="grid md:grid-cols-3 grid-cols-2 gap-4 my-10 py-6 px-2 rounded-xl hover:bg-slate-200 dark:hover:bg-slate-700">
+                        <div className="col-span-1 gap-5 md:flex hidden p-5">
                             <PrismicNextImage
                                 field={project.project_image}
-                                className="h-60 w-full object-cover rounded-xl"
+                                className="h-60 w-full object-cover aspect-video rounded-xl"
                             />
                         </div>
-                        <div className="col-span-2">
+                        <div className="col-span-2 px-5">
                             <Heading as="h3" size="md" className="text-blue-500 dark:text-slate-300">
                                 {project.project_title}
                             </Heading>
-                            <div className="prose prose-lg dark:text-slate-300 text-black">
+                            <div className="dark:text-slate-300 text-black py-5">
+                                {project.project_tagline}
+                            </div>
+                            <div className="prose prose-sm dark:text-slate-300 text-black py-5">
                                 <PrismicRichText field={project.project_description} />
                             </div>
                             <div className="flex items-center justify-between mt-4">

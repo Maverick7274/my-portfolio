@@ -14,7 +14,7 @@ const PrismicCard = ({ slice }: ProjectsProps): JSX.Element => {
 	const components = useRef<HTMLDivElement>(null);
 
 	return (
-		<div className="grid grid-cols-2">
+		<div className="grid md:grid-cols-2 grid-cols-1">
 			{slice.primary.project_details.map((project, index) => {
 				return (
 					<CardContainer key={index} className="">

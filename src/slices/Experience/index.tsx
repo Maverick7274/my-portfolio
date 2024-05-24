@@ -38,7 +38,7 @@ const Experience = ({ slice }: ExperienceProps): JSX.Element => {
 						size="md"
 						className="col-start-1 dark:text-slate-300 text-blue-500"
 					>
-						My Experience
+						{slice.primary.heading}
 					</Heading>
 				</div>
 				<div>

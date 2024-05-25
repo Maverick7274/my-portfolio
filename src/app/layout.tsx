@@ -24,6 +24,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" suppressHydrationWarning>
+			<script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=neelanjans-profile"></script>
 			<ThemeProvider
 				attribute="class"
 				defaultTheme="system"

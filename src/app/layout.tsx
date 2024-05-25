@@ -5,8 +5,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
-import { Analytics } from "@vercel/analytics/react"
-import {SpeedInsights} from "@vercel/speed-insights/react"
+import { Analytics } from "@vercel/analytics/next"
+import {SpeedInsights} from "@vercel/speed-insights/next"
 
 const fontSans = FontSans({
 	subsets: ["latin"],

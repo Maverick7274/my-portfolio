@@ -6,7 +6,7 @@ import gsap from "gsap";
 import Bounded from "@/components/Bounded";
 import { Button } from "@/components/ui/button";
 import { WavyBackground } from "@/components/ui/wavy-background";
-// import { Vortex } from "@/components/ui/vortex";
+import { Vortex } from "@/components/ui/vortex";
 
 export type HeroProps = SliceComponentProps<Content.HeroSlice>;
 
@@ -98,6 +98,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
 
 	return (
 		<WavyBackground>
+			 {/* <Vortex> */}
 			<Bounded
 				data-slice-type={slice.slice_type}
 				data-slice-variation={slice.variation}
@@ -133,7 +134,8 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
 					<div></div>
 				</div>
 			</Bounded>
-		</WavyBackground>
+			{/* </Vortex> */}
+			</WavyBackground>
 	);
 };
 

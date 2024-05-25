@@ -8,17 +8,6 @@
 				"value": "pan",
 				"type": "Text"
 			},
-			"description": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "Veniam non adipisicing enim proident. Cupidatat labore exercitation mollit ad incididunt labore ea sit nostrud dolor occaecat tempor laboris labore Lorem."
-						}
-					}
-				]
-			},
 			"button_link": {
 				"__TYPE__": "LinkContent",
 				"value": {
@@ -32,7 +21,6 @@
 				"type": "Text"
 			},
 			"avatar": {
-				"__TYPE__": "ImageContent",
 				"origin": {
 					"id": "main",
 					"url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
@@ -50,7 +38,21 @@
 					},
 					"background": "transparent"
 				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
 				"thumbnails": {}
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Voluptate fugiat magna reprehenderit do fugiat. Proident ullamco velit occaecat consequat cillum pariatur aliqua."
+						}
+					}
+				]
 			}
 		},
 		"items": []

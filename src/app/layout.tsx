@@ -6,7 +6,7 @@ import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import { Analytics } from "@vercel/analytics/react"
-import {SpeedInsights} from "@vercel/speed-insights"
+import {SpeedInsights} from "@vercel/speed-insights/react"
 
 const fontSans = FontSans({
 	subsets: ["latin"],

@@ -1,0 +1,291 @@
+{
+  "id": "skills",
+  "type": "SharedSlice",
+  "name": "Skills",
+  "description": "Skills",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "Text",
+          "config": {
+            "label": "Heading",
+            "placeholder": ""
+          }
+        },
+        "paragraph": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Paragraph",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "sub_heading": {
+          "type": "Group",
+          "config": {
+            "label": "Sub Heading",
+            "repeat": true,
+            "fields": {
+              "sub_heading_content": {
+                "type": "Text",
+                "config": {
+                  "label": "Sub Heading Content",
+                  "placeholder": ""
+                }
+              }
+            }
+          }
+        },
+        "top_lang": {
+          "type": "Group",
+          "config": {
+            "label": "My Top Programming Languages",
+            "repeat": true,
+            "fields": {
+              "tech_id": {
+                "type": "Number",
+                "config": {
+                  "label": "Tech ID",
+                  "placeholder": ""
+                }
+              },
+              "technologies_used": {
+                "type": "Text",
+                "config": {
+                  "label": "Technologies Used",
+                  "placeholder": ""
+                }
+              },
+              "technology_description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Technology Description",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              },
+              "technology_image": {
+                "type": "Image",
+                "config": {
+                  "label": "Technology Image",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              }
+            }
+          }
+        },
+        "frontend": {
+          "type": "Group",
+          "config": {
+            "label": "Frontend",
+            "repeat": true,
+            "fields": {
+              "tech_id": {
+                "type": "Number",
+                "config": {
+                  "label": "Tech ID",
+                  "placeholder": ""
+                }
+              },
+              "technologies_used": {
+                "type": "Text",
+                "config": {
+                  "label": "Technologies Used",
+                  "placeholder": ""
+                }
+              },
+              "technology_description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Technology Description",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              },
+              "technology_image": {
+                "type": "Image",
+                "config": {
+                  "label": "Technology Image",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              }
+            }
+          }
+        },
+        "backend": {
+          "type": "Group",
+          "config": {
+            "label": "Backend",
+            "repeat": true,
+            "fields": {
+              "tech_id": {
+                "type": "Number",
+                "config": {
+                  "label": "Tech ID",
+                  "placeholder": ""
+                }
+              },
+              "technologies_used": {
+                "type": "Text",
+                "config": {
+                  "label": "Technologies Used",
+                  "placeholder": ""
+                }
+              },
+              "technology_description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Technology Description",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              },
+              "technology_image": {
+                "type": "Image",
+                "config": {
+                  "label": "Technology Image",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              }
+            }
+          }
+        },
+        "deployment": {
+          "type": "Group",
+          "config": {
+            "label": "Deployment",
+            "repeat": true,
+            "fields": {
+              "tech_id": {
+                "type": "Number",
+                "config": {
+                  "label": "Tech ID",
+                  "placeholder": ""
+                }
+              },
+              "technologies_used": {
+                "type": "Text",
+                "config": {
+                  "label": "Technologies Used",
+                  "placeholder": ""
+                }
+              },
+              "technology_description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Technology Description",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              },
+              "technology_image": {
+                "type": "Image",
+                "config": {
+                  "label": "Technology Image",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              }
+            }
+          }
+        },
+        "database": {
+          "type": "Group",
+          "config": {
+            "label": "Database",
+            "repeat": true,
+            "fields": {
+              "tech_id": {
+                "type": "Number",
+                "config": {
+                  "label": "Tech ID",
+                  "placeholder": ""
+                }
+              },
+              "technologies_used": {
+                "type": "Text",
+                "config": {
+                  "label": "Technologies Used",
+                  "placeholder": ""
+                }
+              },
+              "technology_description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Technology Description",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              },
+              "technology_image": {
+                "type": "Image",
+                "config": {
+                  "label": "Technology Image",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              }
+            }
+          }
+        },
+        "devops": {
+          "type": "Group",
+          "config": {
+            "label": "DevOps",
+            "repeat": true,
+            "fields": {
+              "tech_id": {
+                "type": "Number",
+                "config": {
+                  "label": "Tech ID",
+                  "placeholder": ""
+                }
+              },
+              "technologies_used": {
+                "type": "Text",
+                "config": {
+                  "label": "Technologies Used",
+                  "placeholder": ""
+                }
+              },
+              "technology_description": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Technology Description",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                }
+              },
+              "technology_image": {
+                "type": "Image",
+                "config": {
+                  "label": "Technology Image",
+                  "constraint": {},
+                  "thumbnails": []
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

@@ -1,0 +1,439 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "FieldContent",
+				"value": "walk",
+				"type": "Text"
+			},
+			"frontend": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"technologies_used",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "when",
+									"type": "Text"
+								}
+							],
+							[
+								"technology_image",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
+										"width": 3168,
+										"height": 4752
+									},
+									"url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
+									"width": 3168,
+									"height": 4752,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"credits": null,
+									"alt": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"technology_description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Amet eu culpa consequat elit."
+											}
+										}
+									]
+								}
+							],
+							[
+								"tech_id",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "5",
+									"type": "Number"
+								}
+							]
+						]
+					}
+				]
+			},
+			"backend": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"technologies_used",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "firm",
+									"type": "Text"
+								}
+							],
+							[
+								"technology_description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Cillum reprehenderit eiusmod aute consectetur nisi ea elit irure reprehenderit. Qui excepteur aliqua aute. Dolor irure culpa qui culpa ad eiusmod est commodo deserunt fugiat est enim."
+											}
+										}
+									]
+								}
+							],
+							[
+								"technology_image",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118",
+										"width": 4160,
+										"height": 3120
+									},
+									"url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118",
+									"width": 4160,
+									"height": 3120,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"credits": null,
+									"alt": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"tech_id",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "6",
+									"type": "Number"
+								}
+							]
+						]
+					}
+				]
+			},
+			"paragraph": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Magna fugiat labore velit laboris fugiat sint dolore qui dolor."
+						}
+					}
+				]
+			},
+			"deployment": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"technologies_used",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "twenty",
+									"type": "Text"
+								}
+							],
+							[
+								"technology_description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Minim mollit ut et proident laboris occaecat qui do incididunt fugiat commodo. Officia et irure incididunt eu ex laborum do laboris ad cupidatat ut sit. Nostrud occaecat voluptate duis."
+											}
+										}
+									]
+								}
+							],
+							[
+								"technology_image",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1587840171670-8b850147754e",
+										"width": 4480,
+										"height": 4480
+									},
+									"url": "https://images.unsplash.com/photo-1587840171670-8b850147754e",
+									"width": 4480,
+									"height": 4480,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"credits": null,
+									"alt": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"tech_id",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "36",
+									"type": "Number"
+								}
+							]
+						]
+					}
+				]
+			},
+			"top_lang": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"tech_id",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "91",
+									"type": "Number"
+								}
+							],
+							[
+								"technologies_used",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "metal",
+									"type": "Text"
+								}
+							],
+							[
+								"technology_description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Amet minim est eu. Fugiat et ullamco Lorem laborum nostrud nulla minim sunt non laboris minim laborum enim. Exercitation anim non qui duis do culpa non incididunt eiusmod aute aliqua ad commodo dolore sit."
+											}
+										}
+									]
+								}
+							],
+							[
+								"technology_image",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43",
+										"width": 4024,
+										"height": 4024
+									},
+									"url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43",
+									"width": 4024,
+									"height": 4024,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"credits": null,
+									"alt": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							]
+						]
+					}
+				]
+			},
+			"database": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"tech_id",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "58",
+									"type": "Number"
+								}
+							],
+							[
+								"technologies_used",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "parallel",
+									"type": "Text"
+								}
+							],
+							[
+								"technology_description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Adipisicing mollit consequat dolore do."
+											}
+										}
+									]
+								}
+							],
+							[
+								"technology_image",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb",
+										"width": 3958,
+										"height": 3958
+									},
+									"url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb",
+									"width": 3958,
+									"height": 3958,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"credits": null,
+									"alt": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							]
+						]
+					}
+				]
+			},
+			"devops": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"tech_id",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "34",
+									"type": "Number"
+								}
+							],
+							[
+								"technologies_used",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "forest",
+									"type": "Text"
+								}
+							],
+							[
+								"technology_description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Cupidatat est irure est qui reprehenderit tempor laborum ad."
+											}
+										}
+									]
+								}
+							],
+							[
+								"technology_image",
+								{
+									"origin": {
+										"id": "main",
+										"url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+										"width": 4076,
+										"height": 2712
+									},
+									"url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+									"width": 4076,
+									"height": 2712,
+									"edit": {
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										},
+										"background": "transparent"
+									},
+									"credits": null,
+									"alt": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							]
+						]
+					}
+				]
+			},
+			"sub_heading": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"sub_heading_content",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "length",
+									"type": "Text"
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

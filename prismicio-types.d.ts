@@ -69,7 +69,11 @@ export type HomepageDocument<Lang extends string = string> =
     Lang
   >;
 
-type PageDocumentDataSlicesSlice = ProjectsSlice | ContactSlice | AboutSlice;
+type PageDocumentDataSlicesSlice =
+  | SkillsSlice
+  | ProjectsSlice
+  | ContactSlice
+  | AboutSlice;
 
 /**
  * Content for Page documents
@@ -855,6 +859,417 @@ export type ProjectsSlice = prismic.SharedSlice<
   ProjectsSliceVariation
 >;
 
+/**
+ * Item in *Skills → Default → Primary → Sub Heading*
+ */
+export interface SkillsSliceDefaultPrimarySubHeadingItem {
+  /**
+   * Sub Heading Content field in *Skills → Default → Primary → Sub Heading*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.sub_heading[].sub_heading_content
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  sub_heading_content: prismic.KeyTextField;
+}
+
+/**
+ * Item in *Skills → Default → Primary → My Top Programming Languages*
+ */
+export interface SkillsSliceDefaultPrimaryTopLangItem {
+  /**
+   * Tech ID field in *Skills → Default → Primary → My Top Programming Languages*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.top_lang[].tech_id
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  tech_id: prismic.NumberField;
+
+  /**
+   * Technologies Used field in *Skills → Default → Primary → My Top Programming Languages*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.top_lang[].technologies_used
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  technologies_used: prismic.KeyTextField;
+
+  /**
+   * Technology Description field in *Skills → Default → Primary → My Top Programming Languages*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.top_lang[].technology_description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  technology_description: prismic.RichTextField;
+
+  /**
+   * Technology Image field in *Skills → Default → Primary → My Top Programming Languages*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.top_lang[].technology_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  technology_image: prismic.ImageField<never>;
+}
+
+/**
+ * Item in *Skills → Default → Primary → Frontend*
+ */
+export interface SkillsSliceDefaultPrimaryFrontendItem {
+  /**
+   * Tech ID field in *Skills → Default → Primary → Frontend*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.frontend[].tech_id
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  tech_id: prismic.NumberField;
+
+  /**
+   * Technologies Used field in *Skills → Default → Primary → Frontend*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.frontend[].technologies_used
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  technologies_used: prismic.KeyTextField;
+
+  /**
+   * Technology Description field in *Skills → Default → Primary → Frontend*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.frontend[].technology_description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  technology_description: prismic.RichTextField;
+
+  /**
+   * Technology Image field in *Skills → Default → Primary → Frontend*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.frontend[].technology_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  technology_image: prismic.ImageField<never>;
+}
+
+/**
+ * Item in *Skills → Default → Primary → Backend*
+ */
+export interface SkillsSliceDefaultPrimaryBackendItem {
+  /**
+   * Tech ID field in *Skills → Default → Primary → Backend*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.backend[].tech_id
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  tech_id: prismic.NumberField;
+
+  /**
+   * Technologies Used field in *Skills → Default → Primary → Backend*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.backend[].technologies_used
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  technologies_used: prismic.KeyTextField;
+
+  /**
+   * Technology Description field in *Skills → Default → Primary → Backend*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.backend[].technology_description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  technology_description: prismic.RichTextField;
+
+  /**
+   * Technology Image field in *Skills → Default → Primary → Backend*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.backend[].technology_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  technology_image: prismic.ImageField<never>;
+}
+
+/**
+ * Item in *Skills → Default → Primary → Deployment*
+ */
+export interface SkillsSliceDefaultPrimaryDeploymentItem {
+  /**
+   * Tech ID field in *Skills → Default → Primary → Deployment*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.deployment[].tech_id
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  tech_id: prismic.NumberField;
+
+  /**
+   * Technologies Used field in *Skills → Default → Primary → Deployment*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.deployment[].technologies_used
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  technologies_used: prismic.KeyTextField;
+
+  /**
+   * Technology Description field in *Skills → Default → Primary → Deployment*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.deployment[].technology_description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  technology_description: prismic.RichTextField;
+
+  /**
+   * Technology Image field in *Skills → Default → Primary → Deployment*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.deployment[].technology_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  technology_image: prismic.ImageField<never>;
+}
+
+/**
+ * Item in *Skills → Default → Primary → Database*
+ */
+export interface SkillsSliceDefaultPrimaryDatabaseItem {
+  /**
+   * Tech ID field in *Skills → Default → Primary → Database*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.database[].tech_id
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  tech_id: prismic.NumberField;
+
+  /**
+   * Technologies Used field in *Skills → Default → Primary → Database*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.database[].technologies_used
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  technologies_used: prismic.KeyTextField;
+
+  /**
+   * Technology Description field in *Skills → Default → Primary → Database*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.database[].technology_description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  technology_description: prismic.RichTextField;
+
+  /**
+   * Technology Image field in *Skills → Default → Primary → Database*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.database[].technology_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  technology_image: prismic.ImageField<never>;
+}
+
+/**
+ * Item in *Skills → Default → Primary → DevOps*
+ */
+export interface SkillsSliceDefaultPrimaryDevopsItem {
+  /**
+   * Tech ID field in *Skills → Default → Primary → DevOps*
+   *
+   * - **Field Type**: Number
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.devops[].tech_id
+   * - **Documentation**: https://prismic.io/docs/field#number
+   */
+  tech_id: prismic.NumberField;
+
+  /**
+   * Technologies Used field in *Skills → Default → Primary → DevOps*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.devops[].technologies_used
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  technologies_used: prismic.KeyTextField;
+
+  /**
+   * Technology Description field in *Skills → Default → Primary → DevOps*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.devops[].technology_description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  technology_description: prismic.RichTextField;
+
+  /**
+   * Technology Image field in *Skills → Default → Primary → DevOps*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.devops[].technology_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  technology_image: prismic.ImageField<never>;
+}
+
+/**
+ * Primary content in *Skills → Default → Primary*
+ */
+export interface SkillsSliceDefaultPrimary {
+  /**
+   * Heading field in *Skills → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.heading
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  heading: prismic.KeyTextField;
+
+  /**
+   * Paragraph field in *Skills → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.paragraph
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  paragraph: prismic.RichTextField;
+
+  /**
+   * Sub Heading field in *Skills → Default → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.sub_heading[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  sub_heading: prismic.GroupField<
+    Simplify<SkillsSliceDefaultPrimarySubHeadingItem>
+  >;
+
+  /**
+   * My Top Programming Languages field in *Skills → Default → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.top_lang[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  top_lang: prismic.GroupField<Simplify<SkillsSliceDefaultPrimaryTopLangItem>>;
+
+  /**
+   * Frontend field in *Skills → Default → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.frontend[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  frontend: prismic.GroupField<Simplify<SkillsSliceDefaultPrimaryFrontendItem>>;
+
+  /**
+   * Backend field in *Skills → Default → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.backend[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  backend: prismic.GroupField<Simplify<SkillsSliceDefaultPrimaryBackendItem>>;
+
+  /**
+   * Deployment field in *Skills → Default → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.deployment[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  deployment: prismic.GroupField<
+    Simplify<SkillsSliceDefaultPrimaryDeploymentItem>
+  >;
+
+  /**
+   * Database field in *Skills → Default → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.database[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  database: prismic.GroupField<Simplify<SkillsSliceDefaultPrimaryDatabaseItem>>;
+
+  /**
+   * DevOps field in *Skills → Default → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: skills.default.primary.devops[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  devops: prismic.GroupField<Simplify<SkillsSliceDefaultPrimaryDevopsItem>>;
+}
+
+/**
+ * Default variation for Skills Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type SkillsSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<SkillsSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *Skills*
+ */
+type SkillsSliceVariation = SkillsSliceDefault;
+
+/**
+ * Skills Shared Slice
+ *
+ * - **API ID**: `skills`
+ * - **Description**: Skills
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type SkillsSlice = prismic.SharedSlice<"skills", SkillsSliceVariation>;
+
 declare module "@prismicio/client" {
   interface CreateClient {
     (
@@ -897,6 +1312,17 @@ declare module "@prismicio/client" {
       ProjectsSliceDefaultPrimary,
       ProjectsSliceVariation,
       ProjectsSliceDefault,
+      SkillsSlice,
+      SkillsSliceDefaultPrimarySubHeadingItem,
+      SkillsSliceDefaultPrimaryTopLangItem,
+      SkillsSliceDefaultPrimaryFrontendItem,
+      SkillsSliceDefaultPrimaryBackendItem,
+      SkillsSliceDefaultPrimaryDeploymentItem,
+      SkillsSliceDefaultPrimaryDatabaseItem,
+      SkillsSliceDefaultPrimaryDevopsItem,
+      SkillsSliceDefaultPrimary,
+      SkillsSliceVariation,
+      SkillsSliceDefault,
     };
   }
 }

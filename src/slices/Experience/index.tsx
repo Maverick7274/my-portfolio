@@ -75,10 +75,13 @@ const Experience = ({ slice }: ExperienceProps): JSX.Element => {
 									size="sm"
 									className="col-start-1 dark:text-slate-700 text-blue-500"
 								>
+									<span className="block leading-none tracking-tighter">
 									{
 										slice.primary.organizations[org]
 											?.job_title
-									}{" "}
+									}
+									</span>
+									{" "}
 									@{" "}
 									<PrismicNextLink
 										className="text-blue-700 hover:text-blue-900 hover:underline"

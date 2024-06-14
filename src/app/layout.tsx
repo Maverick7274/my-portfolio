@@ -5,8 +5,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
-import { Analytics } from "@vercel/analytics/next"
-import {SpeedInsights} from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const fontSans = FontSans({
 	subsets: ["latin"],
@@ -25,7 +25,14 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" suppressHydrationWarning>
-			<script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=neelanjans-profile"></script>
+			<head>
+				<link rel="icon" href="./favicon.ico" />
+			</head>
+			<script
+				async
+				defer
+				src="https://static.cdn.prismic.io/prismic.js?new=true&repo=neelanjans-profile"
+			></script>
 			<ThemeProvider
 				attribute="class"
 				defaultTheme="system"
